@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { uuid } from 'uuidv4'
 // Create Form & Submit Button.
 // Create handleSubmit function and pass into onSubmit property in form tag.
 // Create handleChange function and set the input text to input from useState hook. 
@@ -14,14 +14,14 @@ const TodoForm = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-/*
+
         props.onSubmit({
             id: Math.floor(Math.random() * 10000), 
             text: input
         })
 
-*/
        setInput('')
+       
     }
      return (
         <form className="todo-form" onSubmit={handleSubmit}>
